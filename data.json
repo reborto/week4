@@ -1,12 +1,13 @@
 { 
-    "title": "Free Guy",
+    "title": "Free Guy", 
     "year": 2021,
-    "cast: ["Ryan Raynolds", "Jodie Comer"],
-    "details":{
-        "cameos": true,
-        "isFunny": true,
-        "realistic": false  
+    "director": "Shaun Levy",
+    "cast": ["Ryan Raynolds", "Jodie Comer"],
+    "details": {
+      "cameos": true,
+      "isFunny": true,
+      "realistic": false
     },
-    "genre":"comedy",
-    "duration": 115,
-}
+    "genre": "comedy",
+    "duration": 115
+  }

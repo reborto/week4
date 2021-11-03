@@ -23,3 +23,4 @@ const newNames = names.concat(["rick"]); //metodo per salvare il risultato
 names.forEach(()=>{
     console.log(element, index);
 })
+
