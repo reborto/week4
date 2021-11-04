@@ -22,4 +22,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const list = q('ul');
 
     render(list, data);
+
+    // form.addEventListener('submit', (event)=>{
+    //   event.preventDefault(); //.preventDefault blocca l'evento in un certo punto
+    //   const value=input.value.toLowerCase(); //.toLowerCase trasforma tutto in minuscolo così non c'è discrepanza - annula il key sensitive
+      
+    //   const results=data.filter((element, index)=>{
+    //     return element.name.toLowerCase().search(value) > -1 //idem qua, così sono tutti e due minuscoli
+    //   });
+
+    //   render(list, results);
+    // });
+
+
+    //per fare la ricerca in contemporanea alla digitazione
+    input.addEventListener('keyup', (event)=>{
+      const value=input.value.toLowerCase(); 
+
+      const results=data.filter((element, index)=>{
+         element.name.toLowerCase().search(value) > -1 ||
+         element.email.toLowerCase().search(value) > -1 
+      });
+
+      render(list, results);
+    });
 });
