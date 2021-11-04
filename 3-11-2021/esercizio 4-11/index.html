@@ -16,7 +16,7 @@
             <h1>contatti js</h1>
         </header>
 
-        <form>
+        <form id="form1">
             <label for="search">ricerca</label>
             <input type="text" name="search" placeholder="cerca" autocomplete="off" />
             <button>cerca</button>
@@ -29,16 +29,17 @@
             </li> -->
 
         </ul>
-        
-       <div class="divForm">
-        <form class="form">
-            <h1>aggiungi nuovo contatto</h1>
-            <input type="text" name="search" placeholder="nome">
-            <input type="text" name="search" placeholder="email">
-            <input type="text" name="search" placeholder="n°">
-            <button>aggiungi</button>
-        </form>
-    </div>
+
+        <div class="divForm">
+            <form id="form2">
+                <h1>aggiungi nuovo contatto</h1>
+                <input type="text" id="name" name="name" placeholder="nome">
+                <input type="text" id="email" name="email" placeholder="email">
+                <input type="text" id="phone" name="phone" placeholder="num">
+                <button id="add">aggiungi</button>
+            </form>
+        </div>
+
     </main>
     <script src="data.js"></script>
     <script src="index.js"></script>
