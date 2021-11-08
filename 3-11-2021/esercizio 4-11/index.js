@@ -20,10 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const form1 = q('#form1');
     const input = q('#form1 input');
     const list = q('ul');
+
     const form2 = q('#form2');
-    const name = q('#name');
-    const phone = q('#phone');
-    const email = q('#email');
+    // const name = q('#name');
+    // const phone = q('#phone');
+    // const email = q('#email');
+    //non sono necessari perché, nel form2.addEventListener ho aggiunto event.target
 
     render(list, data);
 
@@ -41,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
     form2.addEventListener('submit', (event) => {
         event.preventDefault();
         const nuovo = {
-            name: name.value,
-            phone: phone.value,
-            email: email.value
+            name: event.target.name.value,
+            phone: event.target.phone.value,
+            email: event.target.email.value
         }
         data.push(nuovo);
         render(list, data);

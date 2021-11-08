@@ -1,0 +1,94 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
+}
+h1{
+    margin: 0;
+    border: 0;
+    padding-left: 90px;
+    padding-top: 500px;
+    padding-bottom:70px ;
+    font-size: 56px;
+    color: rgb(170, 30, 30);
+    background-image: url(untitled2.png);
+    background-size: contain;
+   
+}
+#hero{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 100px;
+    background-image: linear-gradient(black, white);
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin: none;
+    padding-left: 190px;
+    padding-right: 190px;
+    text-align: left;
+    font-size: 24px;
+}
+.modale{
+    position: absolute;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 16px black;
+
+    background: rgb(170, 30, 30);
+    border-radius: 20px;
+    
+    transition: all 1s;
+    opacity: 0;
+    z-index: -1;
+}
+.modale h2{
+    font-size: 2rem;
+    color: khaki;
+
+}
+.modale p{
+    padding:0 30px;
+    color: ivory;
+    justify-content: center;
+}
+.modal_btn {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .modal_btn button{
+    margin-left: 5px;
+    padding: 7.5px 15px;
+    border-radius: 6px;
+    background: rgb(139, 24, 24);
+    color: ivory;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+footer{
+    height: 120px;
+    font-size: 20px;
+   /* color:rgb(170, 30, 30);*/
+   color:darkgrey;
+    text-align: center;
+    line-height: 150px ;
+    background-image: linear-gradient(white 30%, black 70%);
+    
+}
+footer a{color:darkgray}
+footer a:hover{ color: darksalmon;}
+footer a:visited{color: rgb(170, 30, 30);}

@@ -33,9 +33,16 @@
         <div class="divForm">
             <form id="form2">
                 <h1>aggiungi nuovo contatto</h1>
-                <input type="text" id="name" name="name" placeholder="nome">
-                <input type="text" id="email" name="email" placeholder="email">
-                <input type="text" id="phone" name="phone" placeholder="num">
+            
+                <label for="name">nome</label>
+                <input type="text" id="name" name="name" placeholder="nome" autocomplete="off">
+                
+                <label for="email">mail</label>
+                <input type="email" id="email" name="email" placeholder="email" autocomplete="off">
+                
+                <label for="phone">tel</label>
+                <input type="tel" id="phone" name="phone" placeholder="num" autocomplete="off">
+                
                 <button id="add">aggiungi</button>
             </form>
         </div>
