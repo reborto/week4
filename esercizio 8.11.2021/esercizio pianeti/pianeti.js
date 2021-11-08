@@ -69,3 +69,9 @@ const smallTerrPlanets = terrPlanets.filter(smallPlanets);
 const itaName = solarSystem.map(nameIta);
 
 console.log(itaName);
+
+//es 2
+
+const diam = (planet) => planet.radius*2;
+const diamTot = solarSystem.map(diam)
+console.log(diamTot)
